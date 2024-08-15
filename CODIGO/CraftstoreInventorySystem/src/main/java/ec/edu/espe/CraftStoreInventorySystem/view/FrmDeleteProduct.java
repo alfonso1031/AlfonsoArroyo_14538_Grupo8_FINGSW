@@ -280,7 +280,7 @@ public class FrmDeleteProduct extends javax.swing.JFrame {
     }//GEN-LAST:event_searchBtnTextMouseClicked
 
     private void deleteFldTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_deleteFldTextMouseClicked
-            int selectedRow = ID.getSelectedRow();
+           int selectedRow = ID.getSelectedRow();
         if (selectedRow == -1) {
             JOptionPane.showMessageDialog(this, "Porfavor selecicione un producto para eliminar.", "Error", JOptionPane.ERROR_MESSAGE);
             return;
