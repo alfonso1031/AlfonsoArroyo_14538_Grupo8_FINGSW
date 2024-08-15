@@ -332,8 +332,7 @@ public class FrmDeleteProduct extends javax.swing.JFrame {
         tableModel.setRowCount(0); // Limpiar tabla
         List<Document> products = cloudDB.getAllProducts();
         for (Document doc : products) {
-            if (doc.getString("name").toLowerCase().contains(searchCriteria.toLowerCase()) || 
-                doc.getString("id").toLowerCase().contains(searchCriteria.toLowerCase())) {
+            if (doc.getString("name").toLowerCase().contains(searchCriteria.toLowerCase()) || doc.getString("id").toLowerCase().contains(searchCriteria.toLowerCase())) {
                 Object[] rowData = {
                     doc.getString("id"),
                     doc.getString("name"),
