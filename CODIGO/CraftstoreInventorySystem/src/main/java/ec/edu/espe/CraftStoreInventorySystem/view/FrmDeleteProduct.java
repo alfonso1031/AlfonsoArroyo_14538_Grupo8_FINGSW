@@ -280,7 +280,7 @@ public class FrmDeleteProduct extends javax.swing.JFrame {
     }//GEN-LAST:event_searchBtnTextMouseClicked
 
     private void deleteFldTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_deleteFldTextMouseClicked
-           int selectedRow = ID.getSelectedRow();
+        int selectedRow = ID.getSelectedRow();
         if (selectedRow == -1) {
             JOptionPane.showMessageDialog(this, "Porfavor selecicione un producto para eliminar.", "Error", JOptionPane.ERROR_MESSAGE);
             return;
@@ -332,8 +332,7 @@ public class FrmDeleteProduct extends javax.swing.JFrame {
         tableModel.setRowCount(0); // Limpiar tabla
         List<Document> products = cloudDB.getAllProducts();
         for (Document doc : products) {
-            if (doc.getString("name").toLowerCase().contains(searchCriteria.toLowerCase()) || 
-                doc.getString("id").toLowerCase().contains(searchCriteria.toLowerCase())) {
+            if (doc.getString("name").toLowerCase().contains(searchCriteria.toLowerCase()) || doc.getString("id").toLowerCase().contains(searchCriteria.toLowerCase())) {
                 Object[] rowData = {
                     doc.getString("id"),
                     doc.getString("name"),
