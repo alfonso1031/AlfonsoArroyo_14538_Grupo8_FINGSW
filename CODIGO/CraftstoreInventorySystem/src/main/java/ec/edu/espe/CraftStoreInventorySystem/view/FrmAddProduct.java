@@ -362,11 +362,10 @@ public class FrmAddProduct extends javax.swing.JFrame {
         String id = idFldText.getText();
         if (!id.matches("\\d*")) {
             JOptionPane.showMessageDialog(this, "El campo ID solo puede contener números", "Entrada inválida", JOptionPane.WARNING_MESSAGE);
-            idFldText.setText(id.replaceAll("[^\\d]", ""));
+            clearFields();
         } else if (!id.startsWith("0")) {
             JOptionPane.showMessageDialog(this, "El ID debe comenzar con un 0", "Falta 0 al inicio", JOptionPane.WARNING_MESSAGE);
-            idFldText.setText("");
-}
+            clearFields();}
     }//GEN-LAST:event_idFldTextKeyReleased
 
     private void addBtnTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addBtnTextMouseClicked
@@ -395,7 +394,7 @@ public class FrmAddProduct extends javax.swing.JFrame {
             price = 0.0f; // Manejar el error de conversión si el valor no es un float válido
             JOptionPane.showMessageDialog(this, "Precio no válido. Se usará 0.0.", "Advertencia", JOptionPane.WARNING_MESSAGE);
         }
-
+        
         // Crear el objeto Product
         Product product = new Product(id, name, description, quantity, category, price, size);
 
@@ -409,6 +408,7 @@ public class FrmAddProduct extends javax.swing.JFrame {
                 cloudDB.uploadProductData(product);
                 JOptionPane.showMessageDialog(this, "Producto añadido exitosamente!");
             }
+            clearFields();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Error al añadir producto: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
@@ -442,7 +442,16 @@ public class FrmAddProduct extends javax.swing.JFrame {
         xMouse = evt.getX();
         yMouse = evt.getY();
     }//GEN-LAST:event_headerMousePressed
-   
+    
+    private void clearFields() {
+        idFldText.setText("");
+        nameFldText.setText("");
+        descriptionFldText.setText("");
+        categoryFldText.setText("");
+        priceFldText.setText("");
+        sizeFldText.setText("");
+        quantityFldText.setText("");
+    }
     /**
      * @param args the command line arguments
      */
