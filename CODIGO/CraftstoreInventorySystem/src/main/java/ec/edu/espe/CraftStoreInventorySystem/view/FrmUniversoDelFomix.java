@@ -65,9 +65,7 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         LogOutBtn.setBackground(new Color(110, 80, 159));
         HelpBtn.setBackground(new Color(110, 80, 159));
         InventoryBtn.setBackground(new Color(110, 80, 159));
-        InvoiceBtn.setBackground(new Color(110, 80, 159));
         StartBtn.setBackground(new Color(110, 80, 159));
-        CustomerBtn.setBackground(new Color(110, 80, 159));
     }
     public void bgExited(){
         mnuPanel.setBackground(new Color(110, 37, 159));
@@ -76,9 +74,7 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         LogOutBtn.setBackground(new Color(110, 37, 159));
         HelpBtn.setBackground(new Color(110, 37, 159));
         InventoryBtn.setBackground(new Color(110, 37, 159));
-        InvoiceBtn.setBackground(new Color(110, 37, 159));
         StartBtn.setBackground(new Color(110, 37, 159));
-        CustomerBtn.setBackground(new Color(110, 37, 159));
     }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -99,12 +95,7 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         LogOutBtn = new javax.swing.JPanel();
         LogOutBtnTxt = new javax.swing.JLabel();
         HelpBtn = new javax.swing.JPanel();
-        HelpBtnTxt = new javax.swing.JLabel();
         mnuPanel = new javax.swing.JPanel();
-        InvoiceBtn = new javax.swing.JPanel();
-        InvoiceBtnTxt = new javax.swing.JLabel();
-        CustomerBtn = new javax.swing.JPanel();
-        CustomerBtnTxt = new javax.swing.JLabel();
         StartBtn = new javax.swing.JPanel();
         StartBtnTxt = new javax.swing.JLabel();
         InventoryBtn = new javax.swing.JPanel();
@@ -437,41 +428,15 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         HelpBtn.setBackground(new java.awt.Color(110, 37, 159));
         HelpBtn.setPreferredSize(new java.awt.Dimension(156, 19));
 
-        HelpBtnTxt.setFont(new java.awt.Font("Roboto Condensed", 1, 14)); // NOI18N
-        HelpBtnTxt.setForeground(new java.awt.Color(255, 255, 255));
-        HelpBtnTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        HelpBtnTxt.setText("Ayuda");
-        HelpBtnTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        HelpBtnTxt.setMaximumSize(new java.awt.Dimension(38, 19));
-        HelpBtnTxt.setMinimumSize(new java.awt.Dimension(38, 19));
-        HelpBtnTxt.setPreferredSize(new java.awt.Dimension(38, 19));
-        HelpBtnTxt.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                HelpBtnTxtMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                HelpBtnTxtMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                HelpBtnTxtMouseExited(evt);
-            }
-        });
-
         javax.swing.GroupLayout HelpBtnLayout = new javax.swing.GroupLayout(HelpBtn);
         HelpBtn.setLayout(HelpBtnLayout);
         HelpBtnLayout.setHorizontalGroup(
             HelpBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 160, Short.MAX_VALUE)
-            .addGroup(HelpBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(HelpBtnTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE))
         );
         HelpBtnLayout.setVerticalGroup(
             HelpBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(HelpBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(HelpBtnLayout.createSequentialGroup()
-                    .addComponent(HelpBtnTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGap(0, 43, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout mnuPanel1Layout = new javax.swing.GroupLayout(mnuPanel1);
@@ -498,75 +463,6 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
 
         mnuPanel.setBackground(new java.awt.Color(110, 37, 159));
         mnuPanel.setPreferredSize(new java.awt.Dimension(165, 500));
-
-        InvoiceBtn.setBackground(new java.awt.Color(110, 37, 159));
-
-        InvoiceBtnTxt.setFont(new java.awt.Font("Roboto Condensed", 1, 14)); // NOI18N
-        InvoiceBtnTxt.setForeground(new java.awt.Color(255, 255, 255));
-        InvoiceBtnTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        InvoiceBtnTxt.setText("Factura");
-        InvoiceBtnTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        InvoiceBtnTxt.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                InvoiceBtnTxtMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                InvoiceBtnTxtMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                InvoiceBtnTxtMouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout InvoiceBtnLayout = new javax.swing.GroupLayout(InvoiceBtn);
-        InvoiceBtn.setLayout(InvoiceBtnLayout);
-        InvoiceBtnLayout.setHorizontalGroup(
-            InvoiceBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(InvoiceBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(InvoiceBtnTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE))
-        );
-        InvoiceBtnLayout.setVerticalGroup(
-            InvoiceBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 45, Short.MAX_VALUE)
-            .addGroup(InvoiceBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(InvoiceBtnTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE))
-        );
-
-        CustomerBtn.setBackground(new java.awt.Color(110, 37, 159));
-        CustomerBtn.setPreferredSize(new java.awt.Dimension(160, 45));
-
-        CustomerBtnTxt.setFont(new java.awt.Font("Roboto Condensed", 1, 14)); // NOI18N
-        CustomerBtnTxt.setForeground(new java.awt.Color(255, 255, 255));
-        CustomerBtnTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CustomerBtnTxt.setText("Cliente");
-        CustomerBtnTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        CustomerBtnTxt.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                CustomerBtnTxtMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                CustomerBtnTxtMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                CustomerBtnTxtMouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout CustomerBtnLayout = new javax.swing.GroupLayout(CustomerBtn);
-        CustomerBtn.setLayout(CustomerBtnLayout);
-        CustomerBtnLayout.setHorizontalGroup(
-            CustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(CustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(CustomerBtnTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE))
-        );
-        CustomerBtnLayout.setVerticalGroup(
-            CustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 45, Short.MAX_VALUE)
-            .addGroup(CustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(CustomerBtnTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE))
-        );
 
         StartBtn.setBackground(new java.awt.Color(110, 37, 159));
         StartBtn.setPreferredSize(new java.awt.Dimension(160, 45));
@@ -649,22 +545,15 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
             .addGroup(mnuPanelLayout.createSequentialGroup()
                 .addGap(0, 0, 0)
                 .addGroup(mnuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(mnuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(InventoryBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(StartBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(mnuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(CustomerBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(InvoiceBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addComponent(InventoryBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(StartBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         mnuPanelLayout.setVerticalGroup(
             mnuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mnuPanelLayout.createSequentialGroup()
                 .addComponent(StartBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(InvoiceBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(CustomerBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
+                .addGap(90, 90, 90)
                 .addComponent(InventoryBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -985,42 +874,6 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         ViewInventoryBtnTxt.setVisible(false);
     }//GEN-LAST:event_InventoryBtnTxtMouseExited
 
-    private void CustomerBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CustomerBtnTxtMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CustomerBtnTxtMouseClicked
-
-    private void CustomerBtnTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CustomerBtnTxtMouseEntered
-        bgEntered();
-        showStartBtnsMenu();
-    }//GEN-LAST:event_CustomerBtnTxtMouseEntered
-
-    private void CustomerBtnTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CustomerBtnTxtMouseExited
-        bgExited();
-        hideStartBtnsMenu();
-    }//GEN-LAST:event_CustomerBtnTxtMouseExited
-
-    private void InvoiceBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InvoiceBtnTxtMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_InvoiceBtnTxtMouseClicked
-
-    private void InvoiceBtnTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InvoiceBtnTxtMouseEntered
-        bgEntered();
-        AddInvoiceBtn.setVisible(true);
-        AddInvoiceBtnTxt.setVisible(true);
-    }//GEN-LAST:event_InvoiceBtnTxtMouseEntered
-
-    private void InvoiceBtnTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InvoiceBtnTxtMouseExited
-        mnuPanel.setBackground(new Color(110, 37, 159));
-        LogOutBtn.setBackground(new Color(110, 37, 159));
-        HelpBtn.setBackground(new Color(110, 37, 159));
-        InventoryBtn.setBackground(new Color(110, 37, 159));
-        InvoiceBtn.setBackground(new Color(110, 37, 159));
-        StartBtn.setBackground(new Color(110, 37, 159));
-        CustomerBtn.setBackground(new Color(110, 37, 159));
-        AddInvoiceBtn.setVisible(false);
-        AddInvoiceBtnTxt.setVisible(false);
-    }//GEN-LAST:event_InvoiceBtnTxtMouseExited
-
     private void LogOutBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogOutBtnTxtMouseClicked
         FrmLogin frmLogin = new FrmLogin();
         this.setVisible(false);
@@ -1040,21 +893,6 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         this.setVisible(false);
         frmUniversoDelFomixSplash.setVisible(true);
     }//GEN-LAST:event_StartBtnMouseClicked
-
-    private void HelpBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HelpBtnTxtMouseClicked
-        FrmHelp frmHelp = new FrmHelp();
-        this.setVisible(false);
-        frmHelp.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_HelpBtnTxtMouseClicked
-
-    private void HelpBtnTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HelpBtnTxtMouseEntered
-        HelpBtn.setBackground(new Color(110, 80, 159));
-    }//GEN-LAST:event_HelpBtnTxtMouseEntered
-
-    private void HelpBtnTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HelpBtnTxtMouseExited
-        HelpBtn.setBackground(new Color(110, 37, 159));
-    }//GEN-LAST:event_HelpBtnTxtMouseExited
 
     private void AddInvoiceBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddInvoiceBtnTxtMouseClicked
         FrmNewInvoice frmNewInvoice = new FrmNewInvoice();
@@ -1362,8 +1200,6 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
     private javax.swing.JLabel AddInvoiceBtnTxt;
     private javax.swing.JPanel AddProductBtn;
     private javax.swing.JLabel AddProductBtnTxt;
-    private javax.swing.JPanel CustomerBtn;
-    private javax.swing.JLabel CustomerBtnTxt;
     private javax.swing.JPanel DeleteCustomerBtn;
     private javax.swing.JLabel DeleteCustomerBtnTxt;
     private javax.swing.JPanel DeleteProductBtn;
@@ -1373,11 +1209,8 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
     private javax.swing.JPanel EditProductBtn;
     private javax.swing.JLabel EditProductBtnTxt;
     private javax.swing.JPanel HelpBtn;
-    private javax.swing.JLabel HelpBtnTxt;
     private javax.swing.JPanel InventoryBtn;
     private javax.swing.JLabel InventoryBtnTxt;
-    private javax.swing.JPanel InvoiceBtn;
-    private javax.swing.JLabel InvoiceBtnTxt;
     private javax.swing.JPanel LogOutBtn;
     private javax.swing.JLabel LogOutBtnTxt;
     private javax.swing.JPanel StartBtn;
