@@ -270,14 +270,14 @@ public class FrmLogin extends javax.swing.JFrame {
         loginBtn.setBackground(new Color(110, 80, 159));
     }//GEN-LAST:event_loginBtnTxtMouseEntered
 
-    private void loginBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginBtnTxtMouseClicked
+    public void loginBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginBtnTxtMouseClicked
         String user = "admin";
         String password = "admin";
         String pass = new String(passTxt.getPassword());
         FrmUniversoDelFomix frmUniversoDelFomix = new FrmUniversoDelFomix();
         if(userTxt.getText().equals(user)&& pass.equals(password)){  
             this.setVisible(false);
-        frmUniversoDelFomix.setVisible(true);
+            frmUniversoDelFomix.setVisible(true);
         }else{
            JOptionPane.showMessageDialog(this,"Usuario o contraseña incorrectos por favor intentelo de nuevo");
        }   
@@ -359,13 +359,13 @@ public class FrmLogin extends javax.swing.JFrame {
     private javax.swing.JPanel header;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JPanel loginBtn;
-    private javax.swing.JLabel loginBtnTxt;
+    public javax.swing.JPanel loginBtn;
+    public javax.swing.JLabel loginBtnTxt;
     private javax.swing.JPanel panelBg;
     private javax.swing.JLabel passLabel;
-    private javax.swing.JPasswordField passTxt;
+    public javax.swing.JPasswordField passTxt;
     private javax.swing.JLabel title;
     private javax.swing.JLabel userLabel;
-    private javax.swing.JTextField userTxt;
+    public javax.swing.JTextField userTxt;
     // End of variables declaration//GEN-END:variables
 }
