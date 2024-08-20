@@ -11,10 +11,16 @@ import javax.swing.JOptionPane;
 public class FrmLogin extends javax.swing.JFrame {
 
     int xMouse, yMouse;
+    public javax.swing.JLabel errorLabel;
     
     public FrmLogin() {
         initComponents();
         setIconImage(new ImageIcon(getClass().getResource("/logo.png")).getImage());
+        errorLabel = new javax.swing.JLabel();
+        errorLabel.setForeground(Color.red);
+        errorLabel.setVisible(false); // Inicialmente oculto
+        panelBg.add(errorLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 410, 30));
+
     }
     
     /**
@@ -279,14 +285,20 @@ public class FrmLogin extends javax.swing.JFrame {
             this.setVisible(false);
             frmUniversoDelFomix.setVisible(true);
         }else{
-           JOptionPane.showMessageDialog(this,"Usuario o contraseña incorrectos por favor intentelo de nuevo");
+           errorMsg();
        }   
     }//GEN-LAST:event_loginBtnTxtMouseClicked
 
     private void passTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passTxtActionPerformed
 
     }//GEN-LAST:event_passTxtActionPerformed
-
+    public void showError(String message) {
+        errorLabel.setText(message);
+        errorLabel.setVisible(true);
+    }
+    public void errorMsg() {
+        showError("Usuario o contraseña incorrectos por favor intentelo de nuevo");
+    }
     /**
      * @param args the command line arguments
      */
