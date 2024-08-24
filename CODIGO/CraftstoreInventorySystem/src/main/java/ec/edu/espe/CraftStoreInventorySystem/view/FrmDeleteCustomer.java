@@ -241,7 +241,7 @@ public class FrmDeleteCustomer extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+    public void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
    
     int selectedRow = tblCustomers.getSelectedRow();
         if (selectedRow == -1) {
@@ -259,13 +259,13 @@ public class FrmDeleteCustomer extends javax.swing.JFrame {
                 loadAllCustomers();
                 JOptionPane.showMessageDialog(this, "Customer deleted successfully.", "Success", JOptionPane.INFORMATION_MESSAGE);
             } else {
-                JOptionPane.showMessageDialog(this, "Error deleting customer. Please try again.", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this,     "Error deleting customer. Please try again.", "Error", JOptionPane.ERROR_MESSAGE);
             }
         }
         
     }//GEN-LAST:event_btnDeleteActionPerformed
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    public void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
          FrmUniversoDelFomix frmUniversoDelFomix = new FrmUniversoDelFomix();
         this.setVisible(false);
         frmUniversoDelFomix.setVisible(true);

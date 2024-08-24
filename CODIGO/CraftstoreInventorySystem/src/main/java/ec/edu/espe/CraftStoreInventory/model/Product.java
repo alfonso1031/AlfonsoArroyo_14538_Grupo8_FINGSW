@@ -26,9 +26,7 @@ public class Product {
         this.price = price;
         this.size = size;
     }
-    
-    
-    
+
 
     /**
      * @return the id

@@ -344,7 +344,7 @@ public class FrmAddProduct extends javax.swing.JFrame {
         returnBtn.setBackground(new Color(110, 37, 159));
     }//GEN-LAST:event_returnBtnTextMouseExited
 
-    private void returnBtnTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_returnBtnTextMouseClicked
+    public void returnBtnTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_returnBtnTextMouseClicked
         FrmUniversoDelFomix frmUniversoDelFomix = new FrmUniversoDelFomix();
         this.setVisible(false);
         frmUniversoDelFomix.setVisible(true);
@@ -358,7 +358,7 @@ public class FrmAddProduct extends javax.swing.JFrame {
         jLabel2.setVisible(false);
     }//GEN-LAST:event_idFldTextMouseExited
 
-    private void idFldTextKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_idFldTextKeyReleased
+    public void idFldTextKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_idFldTextKeyReleased
         String id = idFldText.getText();
         if (!id.matches("\\d*")) {
             JOptionPane.showMessageDialog(this, "El campo ID solo puede contener números", "Entrada inválida", JOptionPane.WARNING_MESSAGE);
@@ -369,7 +369,7 @@ public class FrmAddProduct extends javax.swing.JFrame {
 }
     }//GEN-LAST:event_idFldTextKeyReleased
 
-    private void addBtnTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addBtnTextMouseClicked
+    public void addBtnTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addBtnTextMouseClicked
         String id = idFldText.getText();
         String name = nameFldText.getText();
         String description = descriptionFldText.getText();
@@ -442,7 +442,7 @@ public class FrmAddProduct extends javax.swing.JFrame {
         xMouse = evt.getX();
         yMouse = evt.getY();
     }//GEN-LAST:event_headerMousePressed
-   
+
     /**
      * @param args the command line arguments
      */
@@ -483,14 +483,14 @@ public class FrmAddProduct extends javax.swing.JFrame {
     private javax.swing.JLabel addBtnText;
     private javax.swing.JLabel addTitle;
     private javax.swing.JPanel backGround;
-    private javax.swing.JTextField categoryFldText;
+    public javax.swing.JTextField categoryFldText;
     private javax.swing.JLabel categoryText;
-    private javax.swing.JTextField descriptionFldText;
+    public javax.swing.JTextField descriptionFldText;
     private javax.swing.JLabel descriptionText;
     private javax.swing.JPanel exitBtn;
     private javax.swing.JLabel exitTxt;
     private javax.swing.JPanel header;
-    private javax.swing.JTextField idFldText;
+    public javax.swing.JTextField idFldText;
     private javax.swing.JLabel idText;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
@@ -501,15 +501,15 @@ public class FrmAddProduct extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
-    private javax.swing.JTextField nameFldText;
+    public javax.swing.JTextField nameFldText;
     private javax.swing.JLabel nameText;
-    private javax.swing.JTextField priceFldText;
+    public javax.swing.JTextField priceFldText;
     private javax.swing.JLabel priceText;
-    private javax.swing.JTextField quantityFldText;
+    public javax.swing.JTextField quantityFldText;
     private javax.swing.JLabel quantityText;
     private javax.swing.JPanel returnBtn;
     private javax.swing.JLabel returnBtnText;
-    private javax.swing.JTextField sizeFldText;
+    public javax.swing.JTextField sizeFldText;
     private javax.swing.JLabel sizeText;
     // End of variables declaration//GEN-END:variables
 }

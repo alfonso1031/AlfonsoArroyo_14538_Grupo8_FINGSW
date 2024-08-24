@@ -4,7 +4,7 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 
-public class PasosASeguir {
+public class loginPasos {
 
     FrmLogin frmLogin = new FrmLogin();
     FrmUniversoDelFomix frmUniversoDelFomix = new FrmUniversoDelFomix();
@@ -19,6 +19,7 @@ public class PasosASeguir {
         frmLogin.userTxt.setText("admin");
         frmLogin.passTxt.setText("admin");
         frmLogin.loginBtnTxtMouseClicked(null);
+
     }
 
     @Entonces("debería ver la página principal")
