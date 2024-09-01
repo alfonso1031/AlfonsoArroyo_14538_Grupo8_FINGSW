@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package ec.edu.espe.CraftStoreInventorySystem.view;
 
 import ec.edu.espe.CraftStoreInventory.utils.CloudDB;
@@ -21,8 +18,11 @@ public class FrmDeleteCustomer extends javax.swing.JFrame {
     /**
      * Creates new form FrmDelateCustomer
      */
+    public String id;
     private CloudDB cloudDB;
     int xMouse, yMouse;
+    public int selectedRow;
+    public int confirmation;
     
     public FrmDeleteCustomer() {
         initComponents();
@@ -243,16 +243,16 @@ public class FrmDeleteCustomer extends javax.swing.JFrame {
 
     public void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
    
-    int selectedRow = tblCustomers.getSelectedRow();
+     selectedRow = tblCustomers.getSelectedRow();
         if (selectedRow == -1) {
             JOptionPane.showMessageDialog(this, "Please select a customer from the table.", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
         DefaultTableModel model = (DefaultTableModel) tblCustomers.getModel();
-        String id = model.getValueAt(selectedRow, 0).toString();
+        id = model.getValueAt(selectedRow, 0).toString();
 
-        int confirmation = JOptionPane.showConfirmDialog(this, "Are you sure you want to delete this customer?", "Confirm Deletion", JOptionPane.YES_NO_OPTION);
+        confirmation = JOptionPane.showConfirmDialog(this, "Are you sure you want to delete this customer?", "Confirm Deletion", JOptionPane.YES_NO_OPTION);
         if (confirmation == JOptionPane.YES_OPTION) {
             boolean success = cloudDB.deleteCustomer(id);
             if (success) {
@@ -263,7 +263,7 @@ public class FrmDeleteCustomer extends javax.swing.JFrame {
             }
         }
         
-    }//GEN-LAST:event_btnDeleteActionPerformed
+    }
 
     public void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
          FrmUniversoDelFomix frmUniversoDelFomix = new FrmUniversoDelFomix();
@@ -347,7 +347,7 @@ public class FrmDeleteCustomer extends javax.swing.JFrame {
     private javax.swing.JTable tblCustomers;
     // End of variables declaration//GEN-END:variables
 
-    private void loadAllCustomers() {
+    public void loadAllCustomers() {
 List<Document> results = cloudDB.getAllCustomers();
         DefaultTableModel model = (DefaultTableModel) tblCustomers.getModel();
         model.setRowCount(0); // Clear existing rows

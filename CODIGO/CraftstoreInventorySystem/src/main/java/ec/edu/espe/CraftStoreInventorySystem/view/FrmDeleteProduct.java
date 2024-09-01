@@ -279,7 +279,7 @@ public class FrmDeleteProduct extends javax.swing.JFrame {
         searchProduct(searchTextFld.getText()); 
     }//GEN-LAST:event_searchBtnTextMouseClicked
 
-    private void deleteFldTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_deleteFldTextMouseClicked
+    public void deleteFldTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_deleteFldTextMouseClicked
             int selectedRow = ID.getSelectedRow();
         if (selectedRow == -1) {
             JOptionPane.showMessageDialog(this, "Porfavor selecicione un producto para eliminar.", "Error", JOptionPane.ERROR_MESSAGE);
@@ -297,7 +297,7 @@ public class FrmDeleteProduct extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_deleteFldTextMouseClicked
 
-    private void returnFldTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_returnFldTextMouseClicked
+    public void returnFldTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_returnFldTextMouseClicked
         FrmUniversoDelFomix frmUniversoDelFomix = new FrmUniversoDelFomix();
         this.setVisible(false);
         frmUniversoDelFomix.setVisible(true);
@@ -328,7 +328,7 @@ public class FrmDeleteProduct extends javax.swing.JFrame {
         yMouse = evt.getY();
     }//GEN-LAST:event_header4MousePressed
 
-        private void searchProduct(String searchCriteria) {
+        public void searchProduct(String searchCriteria) {
         tableModel.setRowCount(0); // Limpiar tabla
         List<Document> products = cloudDB.getAllProducts();
         for (Document doc : products) {
@@ -409,7 +409,7 @@ public class FrmDeleteProduct extends javax.swing.JFrame {
     private javax.swing.JTextField searchTextFld;
     // End of variables declaration//GEN-END:variables
 
-    private void loadProducts() {
+    public void loadProducts() {
         tableModel.setRowCount(0);
         List<Document> products = cloudDB.getAllProducts();
         for (Document doc : products) {
