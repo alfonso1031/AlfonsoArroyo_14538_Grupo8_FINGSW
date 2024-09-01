@@ -13,7 +13,14 @@ public class eliminarProductosPasos {
 
     @Cuando("el usuario borre un producto")
     public void el_usuario_borre_un_producto() {
+        int selectedRow;
+        frmDeleteProduct.selectedRow=1;
+        selectedRow=frmDeleteProduct.selectedRow;
+        if(selectedRow==-1)
+        {
+            System.out.println("Porfavor Seleccione un producto a eliminar");
 
+        }
     }
 
     @Entonces("el producto se debera eliminar")

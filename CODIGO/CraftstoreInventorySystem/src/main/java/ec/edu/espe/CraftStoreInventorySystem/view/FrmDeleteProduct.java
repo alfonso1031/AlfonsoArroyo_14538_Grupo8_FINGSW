@@ -14,7 +14,8 @@ public class FrmDeleteProduct extends javax.swing.JFrame {
     private CloudDB cloudDB;
     private DefaultTableModel tableModel;
     int xMouse, yMouse;
-    
+    public int selectedRow;
+
     public FrmDeleteProduct() {
         initComponents();
         setIconImage(new ImageIcon(getClass().getResource("/logo.png")).getImage());
@@ -22,6 +23,7 @@ public class FrmDeleteProduct extends javax.swing.JFrame {
         tableModel = (DefaultTableModel) ID.getModel();
         tableModel.setRowCount(0);
         loadProducts();
+
     }
     
     @SuppressWarnings("unchecked")
@@ -280,7 +282,7 @@ public class FrmDeleteProduct extends javax.swing.JFrame {
     }//GEN-LAST:event_searchBtnTextMouseClicked
 
     public void deleteFldTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_deleteFldTextMouseClicked
-            int selectedRow = ID.getSelectedRow();
+        selectedRow = ID.getSelectedRow();
         if (selectedRow == -1) {
             JOptionPane.showMessageDialog(this, "Porfavor selecicione un producto para eliminar.", "Error", JOptionPane.ERROR_MESSAGE);
             return;
