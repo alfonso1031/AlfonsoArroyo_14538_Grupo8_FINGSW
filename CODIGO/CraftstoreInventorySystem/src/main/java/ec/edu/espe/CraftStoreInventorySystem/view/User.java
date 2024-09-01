@@ -34,7 +34,7 @@ public class User {
             com.mongodb.client.MongoCollection<org.bson.Document> collection = database.getCollection("usuarios");
 
             org.bson.Document userDocument = new org.bson.Document("username", username)
-                                              .append("password", password);  // Guardar la contraseña codificada
+                                              .append("password", password);  
             collection.insertOne(userDocument);
         } catch (Exception ex) {
             ex.printStackTrace();

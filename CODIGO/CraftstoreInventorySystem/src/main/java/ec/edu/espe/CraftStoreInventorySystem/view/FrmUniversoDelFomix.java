@@ -27,16 +27,6 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     public void hideStartBtnsMenu(){
-        AddInvoiceBtn.setVisible(false);
-        AddInvoiceBtnTxt.setVisible(false);
-        AddCustomerBtn.setVisible(false);
-        AddCustomerBtnTxt.setVisible(false);
-        DeleteCustomerBtn.setVisible(false);
-        DeleteCustomerBtnTxt.setVisible(false);
-        EditCustomerBtn.setVisible(false);
-        EditCustomerBtnTxt.setVisible(false);
-        ViewCustomerBtn.setVisible(false);
-        ViewCustomerBtnTxt.setVisible(false);
         AddProductBtn.setVisible(false);
         AddProductBtnTxt.setVisible(false);
         DeleteProductBtn.setVisible(false);
@@ -47,23 +37,12 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         ViewInventoryBtnTxt.setVisible(false);
     }
     
-    public void showStartBtnsMenu(){
-        AddCustomerBtnTxt.setVisible(true);
-        AddCustomerBtn.setVisible(true);
-        DeleteCustomerBtn.setVisible(true);
-        DeleteCustomerBtnTxt.setVisible(true);
-        EditCustomerBtn.setVisible(true);
-        EditCustomerBtnTxt.setVisible(true);
-        ViewCustomerBtn.setVisible(true);
-        ViewCustomerBtnTxt.setVisible(true);
-    }
     
     public void bgEntered(){
         mnuPanel.setBackground(new Color(110, 80, 159));
         mnuPanel1.setBackground(new Color(110, 80, 159));
         mnuPanel2.setBackground(new Color(110, 80, 159));
         LogOutBtn.setBackground(new Color(110, 80, 159));
-        HelpBtn.setBackground(new Color(110, 80, 159));
         InventoryBtn.setBackground(new Color(110, 80, 159));
         StartBtn.setBackground(new Color(110, 80, 159));
     }
@@ -72,7 +51,6 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         mnuPanel1.setBackground(new Color(110, 37, 159));
         mnuPanel2.setBackground(new Color(110, 37, 159));
         LogOutBtn.setBackground(new Color(110, 37, 159));
-        HelpBtn.setBackground(new Color(110, 37, 159));
         InventoryBtn.setBackground(new Color(110, 37, 159));
         StartBtn.setBackground(new Color(110, 37, 159));
     }
@@ -80,8 +58,6 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
     private void initComponents() {
 
         bgPanel = new javax.swing.JPanel();
-        AddInvoiceBtn = new javax.swing.JPanel();
-        AddInvoiceBtnTxt = new javax.swing.JLabel();
         mnuPanel2 = new javax.swing.JPanel();
         AddProductBtn = new javax.swing.JPanel();
         AddProductBtnTxt = new javax.swing.JLabel();
@@ -94,7 +70,6 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         mnuPanel1 = new javax.swing.JPanel();
         LogOutBtn = new javax.swing.JPanel();
         LogOutBtnTxt = new javax.swing.JLabel();
-        HelpBtn = new javax.swing.JPanel();
         mnuPanel = new javax.swing.JPanel();
         StartBtn = new javax.swing.JPanel();
         StartBtnTxt = new javax.swing.JLabel();
@@ -103,14 +78,6 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         header = new javax.swing.JPanel();
         exitBtn = new javax.swing.JPanel();
         exitTxt = new javax.swing.JLabel();
-        ViewCustomerBtn = new javax.swing.JPanel();
-        ViewCustomerBtnTxt = new javax.swing.JLabel();
-        AddCustomerBtn = new javax.swing.JPanel();
-        AddCustomerBtnTxt = new javax.swing.JLabel();
-        EditCustomerBtn = new javax.swing.JPanel();
-        EditCustomerBtnTxt = new javax.swing.JLabel();
-        DeleteCustomerBtn = new javax.swing.JPanel();
-        DeleteCustomerBtnTxt = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -123,48 +90,6 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         bgPanel.setMaximumSize(new java.awt.Dimension(800, 500));
         bgPanel.setPreferredSize(new java.awt.Dimension(800, 500));
         bgPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        AddInvoiceBtn.setBackground(new java.awt.Color(110, 37, 159));
-
-        AddInvoiceBtnTxt.setFont(new java.awt.Font("Roboto Condensed", 1, 14)); // NOI18N
-        AddInvoiceBtnTxt.setForeground(new java.awt.Color(255, 255, 255));
-        AddInvoiceBtnTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AddInvoiceBtnTxt.setText("Nueva Factura");
-        AddInvoiceBtnTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        AddInvoiceBtnTxt.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                AddInvoiceBtnTxtMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                AddInvoiceBtnTxtMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                AddInvoiceBtnTxtMouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout AddInvoiceBtnLayout = new javax.swing.GroupLayout(AddInvoiceBtn);
-        AddInvoiceBtn.setLayout(AddInvoiceBtnLayout);
-        AddInvoiceBtnLayout.setHorizontalGroup(
-            AddInvoiceBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 130, Short.MAX_VALUE)
-            .addGroup(AddInvoiceBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(AddInvoiceBtnLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(AddInvoiceBtnTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        AddInvoiceBtnLayout.setVerticalGroup(
-            AddInvoiceBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 50, Short.MAX_VALUE)
-            .addGroup(AddInvoiceBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(AddInvoiceBtnLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(AddInvoiceBtnTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        bgPanel.add(AddInvoiceBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 130, 50));
 
         mnuPanel2.setBackground(new java.awt.Color(110, 37, 159));
         mnuPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -411,7 +336,7 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         LogOutBtn.setLayout(LogOutBtnLayout);
         LogOutBtnLayout.setHorizontalGroup(
             LogOutBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 160, Short.MAX_VALUE)
             .addGroup(LogOutBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(LogOutBtnTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE))
         );
@@ -425,36 +350,18 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        HelpBtn.setBackground(new java.awt.Color(110, 37, 159));
-        HelpBtn.setPreferredSize(new java.awt.Dimension(156, 19));
-
-        javax.swing.GroupLayout HelpBtnLayout = new javax.swing.GroupLayout(HelpBtn);
-        HelpBtn.setLayout(HelpBtnLayout);
-        HelpBtnLayout.setHorizontalGroup(
-            HelpBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 160, Short.MAX_VALUE)
-        );
-        HelpBtnLayout.setVerticalGroup(
-            HelpBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 43, Short.MAX_VALUE)
-        );
-
         javax.swing.GroupLayout mnuPanel1Layout = new javax.swing.GroupLayout(mnuPanel1);
         mnuPanel1.setLayout(mnuPanel1Layout);
         mnuPanel1Layout.setHorizontalGroup(
             mnuPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mnuPanel1Layout.createSequentialGroup()
-                .addGroup(mnuPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(HelpBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
-                    .addComponent(LogOutBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(LogOutBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0))
         );
         mnuPanel1Layout.setVerticalGroup(
             mnuPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mnuPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(HelpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
+                .addGap(43, 43, 43)
                 .addComponent(LogOutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
         );
@@ -619,174 +526,6 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
 
         bgPanel.add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 40));
 
-        ViewCustomerBtn.setBackground(new java.awt.Color(110, 37, 159));
-
-        ViewCustomerBtnTxt.setFont(new java.awt.Font("Roboto Condensed", 1, 14)); // NOI18N
-        ViewCustomerBtnTxt.setForeground(new java.awt.Color(255, 255, 255));
-        ViewCustomerBtnTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ViewCustomerBtnTxt.setText("Ver Cliente");
-        ViewCustomerBtnTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        ViewCustomerBtnTxt.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ViewCustomerBtnTxtMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ViewCustomerBtnTxtMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                ViewCustomerBtnTxtMouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout ViewCustomerBtnLayout = new javax.swing.GroupLayout(ViewCustomerBtn);
-        ViewCustomerBtn.setLayout(ViewCustomerBtnLayout);
-        ViewCustomerBtnLayout.setHorizontalGroup(
-            ViewCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 130, Short.MAX_VALUE)
-            .addGroup(ViewCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(ViewCustomerBtnLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(ViewCustomerBtnTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        ViewCustomerBtnLayout.setVerticalGroup(
-            ViewCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
-            .addGroup(ViewCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(ViewCustomerBtnLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(ViewCustomerBtnTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        bgPanel.add(ViewCustomerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 130, 40));
-
-        AddCustomerBtn.setBackground(new java.awt.Color(110, 37, 159));
-
-        AddCustomerBtnTxt.setFont(new java.awt.Font("Roboto Condensed", 1, 14)); // NOI18N
-        AddCustomerBtnTxt.setForeground(new java.awt.Color(255, 255, 255));
-        AddCustomerBtnTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AddCustomerBtnTxt.setText("Añadir Cliente");
-        AddCustomerBtnTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        AddCustomerBtnTxt.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                AddCustomerBtnTxtMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                AddCustomerBtnTxtMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                AddCustomerBtnTxtMouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout AddCustomerBtnLayout = new javax.swing.GroupLayout(AddCustomerBtn);
-        AddCustomerBtn.setLayout(AddCustomerBtnLayout);
-        AddCustomerBtnLayout.setHorizontalGroup(
-            AddCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 130, Short.MAX_VALUE)
-            .addGroup(AddCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(AddCustomerBtnLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(AddCustomerBtnTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        AddCustomerBtnLayout.setVerticalGroup(
-            AddCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
-            .addGroup(AddCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(AddCustomerBtnLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(AddCustomerBtnTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        bgPanel.add(AddCustomerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 130, 40));
-
-        EditCustomerBtn.setBackground(new java.awt.Color(110, 37, 159));
-
-        EditCustomerBtnTxt.setFont(new java.awt.Font("Roboto Condensed", 1, 14)); // NOI18N
-        EditCustomerBtnTxt.setForeground(new java.awt.Color(255, 255, 255));
-        EditCustomerBtnTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EditCustomerBtnTxt.setText("Editar Cliente");
-        EditCustomerBtnTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        EditCustomerBtnTxt.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EditCustomerBtnTxtMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                EditCustomerBtnTxtMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                EditCustomerBtnTxtMouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout EditCustomerBtnLayout = new javax.swing.GroupLayout(EditCustomerBtn);
-        EditCustomerBtn.setLayout(EditCustomerBtnLayout);
-        EditCustomerBtnLayout.setHorizontalGroup(
-            EditCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 130, Short.MAX_VALUE)
-            .addGroup(EditCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(EditCustomerBtnLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(EditCustomerBtnTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        EditCustomerBtnLayout.setVerticalGroup(
-            EditCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
-            .addGroup(EditCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(EditCustomerBtnLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(EditCustomerBtnTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        bgPanel.add(EditCustomerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 130, 40));
-
-        DeleteCustomerBtn.setBackground(new java.awt.Color(110, 37, 159));
-
-        DeleteCustomerBtnTxt.setFont(new java.awt.Font("Roboto Condensed", 1, 14)); // NOI18N
-        DeleteCustomerBtnTxt.setForeground(new java.awt.Color(255, 255, 255));
-        DeleteCustomerBtnTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DeleteCustomerBtnTxt.setText("Eliminar Cliente");
-        DeleteCustomerBtnTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        DeleteCustomerBtnTxt.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                DeleteCustomerBtnTxtMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                DeleteCustomerBtnTxtMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                DeleteCustomerBtnTxtMouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout DeleteCustomerBtnLayout = new javax.swing.GroupLayout(DeleteCustomerBtn);
-        DeleteCustomerBtn.setLayout(DeleteCustomerBtnLayout);
-        DeleteCustomerBtnLayout.setHorizontalGroup(
-            DeleteCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 130, Short.MAX_VALUE)
-            .addGroup(DeleteCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(DeleteCustomerBtnLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(DeleteCustomerBtnTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        DeleteCustomerBtnLayout.setVerticalGroup(
-            DeleteCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
-            .addGroup(DeleteCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(DeleteCustomerBtnLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(DeleteCustomerBtnTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        bgPanel.add(DeleteCustomerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 130, 40));
-
         jLabel1.setFont(new java.awt.Font("Roboto Black", 1, 48)); // NOI18N
         jLabel1.setText("UNIVERSO DEL FOMIX");
         bgPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, 530, 90));
@@ -874,143 +613,11 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         ViewInventoryBtnTxt.setVisible(false);
     }//GEN-LAST:event_InventoryBtnTxtMouseExited
 
-    private void LogOutBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogOutBtnTxtMouseClicked
-        FrmLogin frmLogin = new FrmLogin();
-        this.setVisible(false);
-        frmLogin.setVisible(true);
-    }//GEN-LAST:event_LogOutBtnTxtMouseClicked
-
-    private void LogOutBtnTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogOutBtnTxtMouseEntered
-        LogOutBtn.setBackground(new Color(110, 80, 159));
-    }//GEN-LAST:event_LogOutBtnTxtMouseEntered
-
-    private void LogOutBtnTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogOutBtnTxtMouseExited
-        LogOutBtn.setBackground(new Color(110, 37, 159));
-    }//GEN-LAST:event_LogOutBtnTxtMouseExited
-
     private void StartBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_StartBtnMouseClicked
         FrmUniversoDelFomixSplash frmUniversoDelFomixSplash = new FrmUniversoDelFomixSplash();
         this.setVisible(false);
         frmUniversoDelFomixSplash.setVisible(true);
     }//GEN-LAST:event_StartBtnMouseClicked
-
-    private void AddInvoiceBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddInvoiceBtnTxtMouseClicked
-        FrmNewInvoice frmNewInvoice = new FrmNewInvoice();
-        this.setVisible(false);
-        frmNewInvoice.setVisible(true);
-    }//GEN-LAST:event_AddInvoiceBtnTxtMouseClicked
-
-    private void AddInvoiceBtnTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddInvoiceBtnTxtMouseEntered
-        bgEntered();
-        
-        AddInvoiceBtn.setVisible(true);
-        AddInvoiceBtnTxt.setVisible(true);
-        
-    }//GEN-LAST:event_AddInvoiceBtnTxtMouseEntered
-
-    private void AddInvoiceBtnTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddInvoiceBtnTxtMouseExited
-        bgExited();
-        
-        AddInvoiceBtn.setVisible(false);
-        AddInvoiceBtnTxt.setVisible(false);
-    }//GEN-LAST:event_AddInvoiceBtnTxtMouseExited
-
-    private void AddCustomerBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddCustomerBtnTxtMouseClicked
-        FrmAddCustomer frmAddCustomer = new FrmAddCustomer();
-        frmAddCustomer.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_AddCustomerBtnTxtMouseClicked
-
-    private void AddCustomerBtnTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddCustomerBtnTxtMouseEntered
-        bgEntered();
-        
-        AddCustomerBtnTxt.setVisible(true);
-        AddCustomerBtn.setVisible(true);
-        DeleteCustomerBtn.setVisible(true);
-        DeleteCustomerBtnTxt.setVisible(true);
-        EditCustomerBtn.setVisible(true);
-        EditCustomerBtnTxt.setVisible(true);
-        ViewCustomerBtn.setVisible(true);
-        ViewCustomerBtnTxt.setVisible(true);
-    }//GEN-LAST:event_AddCustomerBtnTxtMouseEntered
-
-    private void AddCustomerBtnTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddCustomerBtnTxtMouseExited
-        bgExited();
-        
-        hideStartBtnsMenu();
-    }//GEN-LAST:event_AddCustomerBtnTxtMouseExited
-
-    private void DeleteCustomerBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeleteCustomerBtnTxtMouseClicked
-        FrmDeleteCustomer frmDeleteCustomer = new FrmDeleteCustomer();
-        frmDeleteCustomer.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_DeleteCustomerBtnTxtMouseClicked
-
-    private void DeleteCustomerBtnTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeleteCustomerBtnTxtMouseEntered
-        bgEntered();
-        AddCustomerBtnTxt.setVisible(true);
-        AddCustomerBtn.setVisible(true);
-        DeleteCustomerBtn.setVisible(true);
-        DeleteCustomerBtnTxt.setVisible(true);
-        EditCustomerBtn.setVisible(true);
-        EditCustomerBtnTxt.setVisible(true);
-        ViewCustomerBtn.setVisible(true);
-        ViewCustomerBtnTxt.setVisible(true);
-    }//GEN-LAST:event_DeleteCustomerBtnTxtMouseEntered
-
-    private void DeleteCustomerBtnTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeleteCustomerBtnTxtMouseExited
-        bgExited();
-        
-        hideStartBtnsMenu();
-    }//GEN-LAST:event_DeleteCustomerBtnTxtMouseExited
-
-    private void EditCustomerBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EditCustomerBtnTxtMouseClicked
-        FrmEditCustomer frmEditCustomer = new FrmEditCustomer();
-        frmEditCustomer.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_EditCustomerBtnTxtMouseClicked
-
-    private void EditCustomerBtnTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EditCustomerBtnTxtMouseEntered
-        bgEntered();
-        
-        AddCustomerBtnTxt.setVisible(true);
-        AddCustomerBtn.setVisible(true);
-        DeleteCustomerBtn.setVisible(true);
-        DeleteCustomerBtnTxt.setVisible(true);
-        EditCustomerBtn.setVisible(true);
-        EditCustomerBtnTxt.setVisible(true);
-        ViewCustomerBtn.setVisible(true);
-        ViewCustomerBtnTxt.setVisible(true);
-    }//GEN-LAST:event_EditCustomerBtnTxtMouseEntered
-
-    private void EditCustomerBtnTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EditCustomerBtnTxtMouseExited
-        bgExited();
-        hideStartBtnsMenu();
-    }//GEN-LAST:event_EditCustomerBtnTxtMouseExited
-
-    private void ViewCustomerBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ViewCustomerBtnTxtMouseClicked
-        FrmViewCustomer frmViewCustomer = new FrmViewCustomer();
-        frmViewCustomer.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_ViewCustomerBtnTxtMouseClicked
-
-    private void ViewCustomerBtnTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ViewCustomerBtnTxtMouseEntered
-        bgEntered();
-        
-        AddCustomerBtnTxt.setVisible(true);
-        AddCustomerBtn.setVisible(true);
-        DeleteCustomerBtn.setVisible(true);
-        DeleteCustomerBtnTxt.setVisible(true);
-        EditCustomerBtn.setVisible(true);
-        EditCustomerBtnTxt.setVisible(true);
-        ViewCustomerBtn.setVisible(true);
-        ViewCustomerBtnTxt.setVisible(true);
-    }//GEN-LAST:event_ViewCustomerBtnTxtMouseEntered
-
-    private void ViewCustomerBtnTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ViewCustomerBtnTxtMouseExited
-        bgExited();
-        hideStartBtnsMenu();
-    }//GEN-LAST:event_ViewCustomerBtnTxtMouseExited
 
     private void ViewInventoryBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ViewInventoryBtnTxtMouseClicked
         FrmViewInventory frmViewInventory = new FrmViewInventory();
@@ -1157,6 +764,20 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
         ViewInventoryBtnTxt.setVisible(true);
     }//GEN-LAST:event_mnuPanel2MouseEntered
 
+    private void LogOutBtnTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogOutBtnTxtMouseExited
+        LogOutBtn.setBackground(new Color(110, 37, 159));
+    }//GEN-LAST:event_LogOutBtnTxtMouseExited
+
+    private void LogOutBtnTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogOutBtnTxtMouseEntered
+        LogOutBtn.setBackground(new Color(110, 80, 159));
+    }//GEN-LAST:event_LogOutBtnTxtMouseEntered
+
+    private void LogOutBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogOutBtnTxtMouseClicked
+        FrmLogin frmLogin = new FrmLogin();
+        this.setVisible(false);
+        frmLogin.setVisible(true);
+    }//GEN-LAST:event_LogOutBtnTxtMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1194,29 +815,18 @@ public final class FrmUniversoDelFomix extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel AddCustomerBtn;
-    private javax.swing.JLabel AddCustomerBtnTxt;
-    private javax.swing.JPanel AddInvoiceBtn;
-    private javax.swing.JLabel AddInvoiceBtnTxt;
     private javax.swing.JPanel AddProductBtn;
     private javax.swing.JLabel AddProductBtnTxt;
-    private javax.swing.JPanel DeleteCustomerBtn;
-    private javax.swing.JLabel DeleteCustomerBtnTxt;
     private javax.swing.JPanel DeleteProductBtn;
     private javax.swing.JLabel DeleteProductBtnTxt;
-    private javax.swing.JPanel EditCustomerBtn;
-    private javax.swing.JLabel EditCustomerBtnTxt;
     private javax.swing.JPanel EditProductBtn;
     private javax.swing.JLabel EditProductBtnTxt;
-    private javax.swing.JPanel HelpBtn;
     private javax.swing.JPanel InventoryBtn;
     private javax.swing.JLabel InventoryBtnTxt;
     private javax.swing.JPanel LogOutBtn;
     private javax.swing.JLabel LogOutBtnTxt;
     private javax.swing.JPanel StartBtn;
     private javax.swing.JLabel StartBtnTxt;
-    private javax.swing.JPanel ViewCustomerBtn;
-    private javax.swing.JLabel ViewCustomerBtnTxt;
     private javax.swing.JPanel ViewInventoryBtn;
     private javax.swing.JLabel ViewInventoryBtnTxt;
     private javax.swing.JPanel bgPanel;

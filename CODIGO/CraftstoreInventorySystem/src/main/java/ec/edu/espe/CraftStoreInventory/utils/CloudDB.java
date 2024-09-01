@@ -12,7 +12,6 @@ import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import static com.mongodb.client.model.Filters.eq;
 import com.mongodb.client.result.DeleteResult;
-import ec.edu.espe.CraftStoreInventory.model.Customer;
 import ec.edu.espe.CraftStoreInventory.model.Product;
 import org.bson.Document;
 import org.bson.conversions.Bson;
@@ -126,23 +125,7 @@ public class CloudDB {
         }
     }
 
-    // Customer operations
-    public void uploadCustomerData(Customer customer) {
-        MongoCollection<Document> collection = getCollection("customer");
-
-        Document document = new Document("id", customer.getId())
-                .append("name", customer.getName())
-                .append("address", customer.getAddress())
-                .append("email", customer.getEmail())
-                .append("phone", customer.getPhone());
-
-
-    try {
-        collection.insertOne(document);
-        System.out.println("Customer data saved successfully!");
-    } catch (MongoException e) {
-        System.err.println("Error inserting document: " + e.getMessage());
-    }    }
+    
    
 
     public List<Document> searchCustomerById(String id){
