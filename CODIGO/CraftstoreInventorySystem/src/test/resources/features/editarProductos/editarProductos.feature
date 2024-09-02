@@ -17,7 +17,7 @@ Característica: Editar Productos
     Cuando presione el boton editar
     Entonces el producto no se editara
 
-  @ProductoEditadoError
+  @Regresar
   Escenario: Regresar
     Dado que el usuario se encuentre en la pagina de EditarProductos
     Cuando presione el boton de regresar

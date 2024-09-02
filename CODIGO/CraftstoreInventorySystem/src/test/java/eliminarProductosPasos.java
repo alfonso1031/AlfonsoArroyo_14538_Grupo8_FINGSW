@@ -3,11 +3,9 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import ec.edu.espe.CraftStoreInventorySystem.view.FrmDeleteProduct;
-import ec.edu.espe.CraftStoreInventorySystem.view.FrmUniversoDelFomix;
 
 public class eliminarProductosPasos {
-
-    FrmDeleteProduct frmDeleteProduct;
+    FrmDeleteProduct frmDeleteProduct=new FrmDeleteProduct();
     FrmUniversoDelFomix frmUniversoDelFomix = new FrmUniversoDelFomix();
 
     @Dado("que el usuario se encuentre en la pagina de elimnar productos")

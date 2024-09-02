@@ -19,7 +19,7 @@ public class editarProductosPasos {
 
     @Cuando("presione el boton editar")
     public void presione_el_boton_editar() {
-        //frmEditProduct.saveProduct();
+        frmEditProduct.saveProduct();
         System.out.println("Producto editado correctamente");
 
     }
@@ -30,7 +30,7 @@ public class editarProductosPasos {
 
     @Entonces("el producto no se editara")
     public void elProductoNoSeEditara() {
-        System.out.println("producto no se editara");
+
     }
 
     @Entonces("regresara a la pagina principal")

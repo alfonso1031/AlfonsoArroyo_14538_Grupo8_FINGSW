@@ -21,13 +21,13 @@ public class añadirProductosPasos {
 
     @Cuando("ingresa un producto valido")
     public void ingresa_un_producto_valido() {
-        frmAddProduct.idFldText.setText("0548");
+        frmAddProduct.idFldText.setText("");
         frmAddProduct.nameFldText.setText("Mongo 2H");
         frmAddProduct.descriptionFldText.setText("lapiz punta fina");
         frmAddProduct.quantityFldText.setText("500");
         frmAddProduct.categoryFldText.setText("lapices");
-        frmAddProduct.priceFldText.setText("50");
-        frmAddProduct.sizeFldText.setText("mediano");
+        frmAddProduct.priceFldText.setText("");
+        frmAddProduct.sizeFldText.setText("");
         frmAddProduct.addBtnTextMouseClicked(null);
 
     }
@@ -48,7 +48,7 @@ public class añadirProductosPasos {
 
     @Cuando("ingresa un producto invalido")
     public void ingresa_un_producto_invalido() {
-        frmAddProduct.idFldText.setText("aaa");
+        frmAddProduct.idFldText.setText("");
         frmAddProduct.nameFldText.setText("Mongo 2H");
         frmAddProduct.descriptionFldText.setText("lapiz punta fina");
         frmAddProduct.quantityFldText.setText("500");
