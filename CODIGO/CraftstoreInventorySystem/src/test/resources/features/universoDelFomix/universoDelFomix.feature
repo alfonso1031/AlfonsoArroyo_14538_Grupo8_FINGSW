@@ -8,13 +8,13 @@ Característica: universoDelFomix
   Escenario: funcionalidad boton ver Inventario
     Dado que se encuentre en la ventana principal
     Cuando presione el boton Ver Inventario
-    Entonces se diriga a esa ventan
+    Entonces se diriga a esa ventana
 
   @BotonAñadirProducto
   Escenario: funcionalidad boton aadirProducto
     Dado que se encuentre en la ventana principal
     Cuando presione el boton aadirProducto
-    Entonces se dirige a la venta aadirProductos
+    Entonces se dirige a la ventana añadirProductos
 
   @BotonVerInventario
   Escenario: funcionalidad boton eliminarProducto
