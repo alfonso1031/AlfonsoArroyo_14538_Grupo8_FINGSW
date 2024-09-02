@@ -15,3 +15,11 @@ Característica: Eliminar Productos
     Dado que el usuario se encuentre en la pagina de elimnar productos
     Cuando el usuario borre un producto
     Entonces el producto no se eliminara
+
+
+
+  @PruebaBoton
+  Escenario: El boton funciona de manera correcta
+    Dado que el usuario se encuentre en la pagina de elimnar productos
+    Cuando el usuario presione el boton regresar
+    Entonces la ventana aparecera

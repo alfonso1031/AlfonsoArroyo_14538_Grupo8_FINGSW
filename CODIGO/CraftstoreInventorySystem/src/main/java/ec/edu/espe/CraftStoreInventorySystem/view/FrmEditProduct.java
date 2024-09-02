@@ -21,7 +21,14 @@ public class FrmEditProduct extends javax.swing.JFrame {
     private CloudDB cloudDB;
     private DefaultTableModel tableModel;
     int xMouse, yMouse;
-    
+    public String id;
+    public String name;
+    public String description;
+    public int quantity;
+    public String size;
+    public double price;
+    public String category;
+
     public FrmEditProduct() {
         initComponents();
         cloudDB = new CloudDB();
@@ -48,16 +55,16 @@ public class FrmEditProduct extends javax.swing.JFrame {
         });
     }
 
-        private void saveProduct() {
+        public void saveProduct() {
         try {
-            String id = idFldText.getText();
-            String name = nameFldText.getText();
-            String description = descriptionFldText.getText();
-            int quantity = Integer.parseInt(quantityFldText.getText());
-            String size = sizeFldText.getText();
-            double price = Double.parseDouble(priceFldText.getText());//falta try catch
+             id = idFldText.getText();
+             name = nameFldText.getText();
+             description = descriptionFldText.getText();
+             quantity = Integer.parseInt(quantityFldText.getText());
+             size = sizeFldText.getText();
+             price = Double.parseDouble(priceFldText.getText());//falta try catch
                      
-            String category = categoryFldText.getText();
+             category = categoryFldText.getText();
 
             Product product = new Product(id, name, description, quantity, size, (float) price, category);
 
@@ -77,7 +84,7 @@ public class FrmEditProduct extends javax.swing.JFrame {
     }
         
         
-        private void loadProducts() {
+        public void loadProducts() {
             tableModel.setRowCount(0); 
             List<Document> products = cloudDB.getAllProducts();
             for (Document doc : products) {
@@ -447,7 +454,7 @@ public class FrmEditProduct extends javax.swing.JFrame {
         saveProduct();
     }//GEN-LAST:event_editBtnTextMouseClicked
 
-    private void returnBtnTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_returnBtnTextMouseClicked
+    public void returnBtnTextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_returnBtnTextMouseClicked
         FrmUniversoDelFomix frmUniversoDelFomix = new FrmUniversoDelFomix();
         this.setVisible(false);
         frmUniversoDelFomix.setVisible(true);
